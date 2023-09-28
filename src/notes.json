@@ -1,0 +1,20 @@
+[
+  {
+    "chapter": "Header 1",
+    "section": [
+      {
+        "header": "Subheader 1",
+        "notes": ["Note 1", "Note 2"]
+      }
+    ]
+  },
+  {
+    "chapter": "Header 2",
+    "section": [
+      {
+        "header": "Subheader 2",
+        "notes": ["Note 1", "Note 2"]
+      }
+    ]
+  }
+]
