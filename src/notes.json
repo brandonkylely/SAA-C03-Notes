@@ -3,11 +3,11 @@
     "chapter": "IAM and CLI",
     "section": [
       {
-        "header": "IAM Infra",
+        "header": "Users and Policies",
         "notes": [
           ["Root User -> Admin User -> IAM User"],
           [
-            "Users can gain policies by being added to groups, or directly attached."
+            "Users can gain policies by being added to groups or directly attached."
           ],
           [
             "IAM Policy",
@@ -23,6 +23,49 @@
             "Action - list of actions this policy allows or denies",
             "Resource - list of resources to which actions apply",
             "Condition - condition for when policy is in effect (optional)"
+          ]
+        ]
+      },
+      {
+        "header": "CLI, Roles, Auditing",
+        "notes": [
+          [
+            "AWS Access Types",
+            "Management Console Access: password/MFA",
+            "CLI: access key",
+            "SDK (code): access key"
+          ],
+          [
+            "AWS CloudShell: Alternate to CLI; Can upload and download files"
+          ],
+          [
+            "IAM Role: Assign policies to AWS services"
+          ],
+          [
+            "Auditing",
+            "AWS Credential Report: See user credential logs",
+            "AWS Access Advisor: See services access logs"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "EC2: Elastic Compute Cloud/IaaS",
+    "section": [
+      {
+        "header": "Basics",
+        "notes": [
+          [
+            "Billing Dashboard to manage costs and create budgets"
+          ],
+          [
+            "EC2 Instance Types: OS, CPU, RAM, Storage, Network, Firewall, Bootstrap Script"
+          ],
+          [
+            "EC2 User Data: Bootstrap script to run on instance launch",
+            "Useful for installing updates, common files, etc.",
+            "Runs with root user privileges"
           ]
         ]
       }
