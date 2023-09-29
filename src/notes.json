@@ -1,19 +1,30 @@
 [
   {
-    "chapter": "Header 1",
+    "chapter": "IAM and CLI",
     "section": [
       {
-        "header": "Subheader 1",
-        "notes": ["Note 1", "Note 2"]
-      }
-    ]
-  },
-  {
-    "chapter": "Header 2",
-    "section": [
-      {
-        "header": "Subheader 2",
-        "notes": ["Note 1", "Note 2"]
+        "header": "IAM Infra",
+        "notes": [
+          ["Root User -> Admin User -> IAM User"],
+          [
+            "Users can gain policies by being added to groups, or directly attached."
+          ],
+          [
+            "IAM Policy",
+            "Version - policy language version",
+            "Id - policy identifier (optional)",
+            "Statement - one or more individual statements"
+          ],
+          [
+            "IAM Policy Statement",
+            "Sid - statement identifier (optional)",
+            "Effect - allow or deny",
+            "Principal - account/user/role to which policy is applied",
+            "Action - list of actions this policy allows or denies",
+            "Resource - list of resources to which actions apply",
+            "Condition - condition for when policy is in effect (optional)"
+          ]
+        ]
       }
     ]
   }

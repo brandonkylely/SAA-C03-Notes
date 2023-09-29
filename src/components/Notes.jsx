@@ -4,16 +4,23 @@ const Notes = () => {
   return (
     <div>
       {notesData.map(({ chapter, section }) => (
-        <div key={chapter} className="mb-4">
-          <h3 className="text-2xl font-semibold mb-2">{chapter}</h3>
+        <div key={chapter} className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Chapter: {chapter}</h2>
           {section.map(({ header, notes }) => (
-            <div key={header} className="ml-4 mb-4">
-              <h4 className="text-xl font-semibold mb-2">{header}</h4>
-              <ul className="list-disc list-inside">
+            <div key={header} className="mb-4 ml-4">
+              <h3 className="text-xl font-semibold mb-2">Section: {header}</h3>
+              <ul className="list-disc list-inside ml-4">
                 {notes.map((note, index) => (
-                  <li key={index} className="mb-1">
-                    {note}
-                  </li>
+                  <div key={index}>
+                    <li key={index} className="mb-2 text-lg font-semibold">{note[0]}</li>
+                    <ul className="list-disc list-inside ml-4">
+                      {note.slice(1).map((subnote, subindex) => (
+                        <li key={subindex} className="mb-1">
+                          {subnote}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
               </ul>
             </div>
