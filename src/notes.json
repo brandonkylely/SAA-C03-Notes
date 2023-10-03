@@ -77,6 +77,23 @@
             "Default: all inbound blocked, all outbound Allowed",
             "Troubleshooting: Timeout -> Security error, Connection Refused -> Application error",
             "Notable Ports: 22 (SSH), 21 (FTP), 22 (SFTP), 80 (HTTP), 443 (HTTPS), 3389 (RDP)"
+          ],
+          [
+            "SSH/EC2 Instance Connect: to be contd"
+          ]
+        ]
+      },
+      {
+        "header": "Associate",
+        "notes": [
+          [
+            "Public vs Private IP (IPV4)",
+            "IPV6: Newer, solves problems, but won't cover much here IE:2001:0000:130F:0000:0000:09C0:876A:130B",
+            "IPV4: [0-255].[0-255].[0-255].[0-255]",
+            "Public: Internet facing, unique to whole web, geo-locatable",
+            "Private: Private network, unique within network, specified range of IPs, connects to internet via NAT + internet gateway (proxy)",
+            "Elastic IP: Fixed IP for EC2 instance, used to mask failure, 5 per account, avoid using",
+            "Elastic IP alternatives: Public IP with registered DNS name, or Load Balancer"
           ]
         ]
       }
