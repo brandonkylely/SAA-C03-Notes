@@ -60,12 +60,36 @@
             "Billing Dashboard to manage costs and create budgets"
           ],
           [
-            "EC2 Instance Types: OS, CPU, RAM, Storage, Network, Firewall, Bootstrap Script"
+            "EC2 Instance Attributes: OS, CPU, RAM, Storage, Network, Firewall, Bootstrap Script"
           ],
           [
-            "EC2 User Data: Bootstrap script to run on instance launch",
+            "EC2 User Data: Bootstrap script to run only once on instance launch",
             "Useful for installing updates, common files, etc.",
             "Runs with root user privileges"
+          ],
+          [
+            "EC2 Instance Types: General Purpose, Compute Optimized, Memory Optimized, Storage Optimized"
+          ],
+          [
+            "EC2 Security Groups: Firewall for EC2 instances",
+            "Lives outside EC2 instance",
+            "Many to many relationship with EC2 instances",
+            "Default: all inbound blocked, all outbound Allowed",
+            "Troubleshooting: Timeout -> Security error, Connection Refused -> Application error",
+            "Notable Ports: 22 (SSH), 21 (FTP), 22 (SFTP), 80 (HTTP), 443 (HTTPS), 3389 (RDP)"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "",
+    "section": [
+      {
+        "header": "",
+        "notes": [
+          [
+            ""
           ]
         ]
       }
