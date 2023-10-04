@@ -92,8 +92,21 @@
             "IPV4: [0-255].[0-255].[0-255].[0-255]",
             "Public: Internet facing, unique to whole web, geo-locatable",
             "Private: Private network, unique within network, specified range of IPs, connects to internet via NAT + internet gateway (proxy)",
-            "Elastic IP: Fixed IP for EC2 instance, used to mask failure, 5 per account, avoid using",
+            "Elastic IP: Fixed IP for EC2 instance, used to mask failure, 5 per account, billed when not associated, avoid using",
             "Elastic IP alternatives: Public IP with registered DNS name, or Load Balancer"
+          ],
+          [
+            "Placement Groups",
+            "Cluster: Same rack, same AZ, low latency, high throughput, high risk. High Performance.",
+            "Spread: Different racks, different AZ, limit 7 instances per AZ per placement group, low risk. High Availability.",
+            "Partition: Many partitions (similar to racks), difference AZ, up to 7 partitions per AZ, up to 100s of EC2 instances. Mix Performance and Availability, like HDFS, HBase, Cassandra, Kafka, etc."
+          ],
+          [
+            "Elastic Network Interfaces (ENI)",
+            "Virtual network card, logical component in VPC",
+            "Attributes: Primary private IPv4, secondary IPv4s, one Elastic IP per private IPv4, public IPv4, MAC address, security groups",
+            "Can create ENI independently and attach to EC2 instance; bound to AZ, can be moved between EC2 instances",
+            "Used for failovers"
           ]
         ]
       }
