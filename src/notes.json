@@ -107,19 +107,40 @@
             "Attributes: Primary private IPv4, secondary IPv4s, one Elastic IP per private IPv4, public IPv4, MAC address, security groups",
             "Can create ENI independently and attach to EC2 instance; bound to AZ, can be moved between EC2 instances",
             "Used for failovers"
+          ],
+          [
+            "EC2 Hibernate",
+            "Saves RAM to Root EBS volume (must be encrypted), faster boot time, 60 days max"
           ]
         ]
       }
     ]
   },
   {
-    "chapter": "",
+    "chapter": "EC2 Instance Storage",
     "section": [
       {
-        "header": "",
+        "header": "EBS Volumes",
         "notes": [
           [
-            ""
+            "Elastic Block Store: 'network USB stick', good for failovers",
+            "Bound to AZ, one instance at a time",
+            "Can be snapshotted to move across AZs",
+            "Need to provision capacity in advance, billed on provision",
+            "Delete on Termination: EBS volume will delete itself when EC2 instance is terminated"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "Review",
+    "section": [
+      {
+        "header": "EC2",
+        "notes": [
+          [
+            "Spot Fleet: Request for EC2 instances at a lower price, can be interrupted, good for batch jobs, can be used with on-demand instances"
           ]
         ]
       }
