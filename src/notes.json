@@ -128,6 +128,13 @@
             "Can be snapshotted to move across AZs",
             "Need to provision capacity in advance, billed on provision",
             "Delete on Termination: EBS volume will delete itself when EC2 instance is terminated"
+          ],
+          [
+            "EBS Snapshots",
+            "Backup of EBS volume. Can copy across AZ or region. Recommended.",
+            "EBS Snapshot Archive: 75% cheaper, longer restore time",
+            "Recycle Bin: Stores deleted EBS snapshots for specified time for recovery.",
+            "Fast Snapshot Restore (FSR): No latency, but costs extra. Helpful for large snapshots."
           ]
         ]
       }
