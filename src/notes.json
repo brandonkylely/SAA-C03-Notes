@@ -135,6 +135,13 @@
             "EBS Snapshot Archive: 75% cheaper, longer restore time",
             "Recycle Bin: Stores deleted EBS snapshots for specified time for recovery.",
             "Fast Snapshot Restore (FSR): No latency, but costs extra. Helpful for large snapshots."
+          ],
+          [
+            "Amazon Machine Image (AMI)",
+            "Customization of EC2 instance. Add software, config, OS, monitoring, etc. Pre-packaged software for faster boot time.",
+            "Region specific but can be copied across regions.",
+            "AMI Types: Public, Private, Marketplace",
+            "AMI Process: Start EC2 instance -> Customize -> Stop EC2 instance -> Build AMI (also creates EBS snapshots), launch instances from other AMIs"
           ]
         ]
       }
