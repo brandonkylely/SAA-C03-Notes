@@ -151,9 +151,11 @@
             "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html"
           ],
           [
-            "EBS Encryption",
-            "Encryption at rest: EBS volumes, snapshots, root volumes, data volumes",
-            "Encryption in transit: EBS volumes, snapshots, root volumes, data volumes, traffic between EC2 instances in same AZ, traffic between EC2 instances and EBS volumes"
+            "EBS Multi-Attach (io1/io2): Attach single EBS volume to up to 16 EC2 instances in same AZ. Achieve higher application availability in clustered Linux applications."
+          ],
+          [
+            "EBS Encryption: Encrypts data at rest and in transit, snapshots, and volumes from snapshots. Always do.",
+            "Encrypt an unencrypted volume: Create snapshot -> Copy snapshot and encrypt the copy -> Create volume from encrypted copy -> Attach volume to original EC2 instance",
           ]
         ]
       }
