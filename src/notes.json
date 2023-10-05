@@ -35,12 +35,8 @@
             "CLI: access key",
             "SDK (code): access key"
           ],
-          [
-            "AWS CloudShell: Alternate to CLI; Can upload and download files"
-          ],
-          [
-            "IAM Role: Assign policies to AWS services"
-          ],
+          ["AWS CloudShell: Alternate to CLI; Can upload and download files"],
+          ["IAM Role: Assign policies to AWS services"],
           [
             "Auditing",
             "AWS Credential Report: See user credential logs",
@@ -56,9 +52,7 @@
       {
         "header": "Basics",
         "notes": [
-          [
-            "Billing Dashboard to manage costs and create budgets"
-          ],
+          ["Billing Dashboard to manage costs and create budgets"],
           [
             "EC2 Instance Attributes: OS, CPU, RAM, Storage, Network, Firewall, Bootstrap Script"
           ],
@@ -78,9 +72,7 @@
             "Troubleshooting: Timeout -> Security error, Connection Refused -> Application error",
             "Notable Ports: 22 (SSH), 21 (FTP), 22 (SFTP), 80 (HTTP), 443 (HTTPS), 3389 (RDP)"
           ],
-          [
-            "SSH/EC2 Instance Connect: to be contd"
-          ]
+          ["SSH/EC2 Instance Connect: to be contd"]
         ]
       },
       {
@@ -142,6 +134,26 @@
             "Region specific but can be copied across regions.",
             "AMI Types: Public, Private, Marketplace",
             "AMI Process: Start EC2 instance -> Customize -> Stop EC2 instance -> Build AMI (also creates EBS snapshots), launch instances from other AMIs"
+          ],
+          [
+            "EC2 Instance Store",
+            "Higher performance than EBS, but ephemeral storage. Good for buffer/cache/temporary content.",
+            "Backup responsibly"
+          ],
+          [
+            "EBS Volume Types",
+            "1. gp2/gp3 (SSD): General purpose, balanced price and performance. 16000 IOPS.",
+            "2. io1/io2 (SSD): Mission-critical purpose, highest performance. 64000 IOPS.",
+            "3. st1 (HDD): Low cost, frequently accessed, throughput-intensive workloads. 500 IOPS, 500 MB/s throughput.",
+            "4. sc1 (HDD): Lowest cost, less frequently accessed vs st1. 250 IOPS, 250 MB/s throughput.",
+            "Only gp2/gp3 and io1/io2 can be used as boot volumes.",
+            "io2 Block Express: Sub-millisecond latency, 256000 IOPS max, 1000 IOPS/GB",
+            "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html"
+          ],
+          [
+            "EBS Encryption",
+            "Encryption at rest: EBS volumes, snapshots, root volumes, data volumes",
+            "Encryption in transit: EBS volumes, snapshots, root volumes, data volumes, traffic between EC2 instances in same AZ, traffic between EC2 instances and EBS volumes"
           ]
         ]
       }
