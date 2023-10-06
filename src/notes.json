@@ -155,7 +155,7 @@
           ],
           [
             "EBS Encryption: Encrypts data at rest and in transit, snapshots, and volumes from snapshots. Always do.",
-            "Encrypt an unencrypted volume: Create snapshot -> Copy snapshot and encrypt the copy -> Create volume from encrypted copy -> Attach volume to original EC2 instance",
+            "Encrypt an unencrypted volume: Create snapshot -> Copy snapshot and encrypt the copy -> Create volume from encrypted copy -> Attach volume to original EC2 instance"
           ]
         ]
       }
