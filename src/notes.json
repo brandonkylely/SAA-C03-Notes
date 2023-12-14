@@ -173,6 +173,40 @@
     ]
   },
   {
+    "chapter": "Elastic Load Balancers",
+    "section": [
+      {
+        "header": "Types",
+        "notes": [
+          [
+            "4 Types:",
+            "Classic Load Balancer: Deprecated",
+            "Application Load Balancer: Layer 7, HTTP/HTTPS, WebSocket",
+            "Network Load Balancer: Layer 4, TCP, UDP",
+            "Gateway Load Balancer: Layer 3"
+          ]
+        ]
+      },
+      {
+        "header": "Sticky Sessions",
+        "notes": [
+          [
+            "Redirects user to the same instance behind a load balancer",
+            "Uses Application-based cookies or Duration-based cookies, AWSALB etc."
+          ]
+        ]
+      },
+      {
+        "header": "Sticky Sessions",
+        "notes": [
+          [
+            "Redirects user to the same instance behind a load balancer"
+          ]
+        ]
+      }
+    ]
+  },
+  {
     "chapter": "Review",
     "section": [
       {
