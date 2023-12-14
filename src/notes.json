@@ -226,6 +226,42 @@
     ]
   },
   {
+    "chapter": "Auto Scaling Groups",
+    "section": [
+      {
+        "header": "Launch Template",
+        "notes": [
+          [
+            "EC2 instance configuration information",
+            "Launch Configuration: deprecated, immutable, less options overall"
+          ]
+        ]
+      },
+      {
+        "header": "Scaling Policies",
+        "notes": [
+          [
+            "Target Tracking Scaling",
+            "Simple/Step Scaling",
+            "Scheduled Actions",
+            "Predictive Scaling"
+          ],
+          [
+            "Metrics",
+            "CPU Utilization",
+            "Network In/Out",
+            "CloudWatch Custom Metrics"
+          ],
+          [
+            "Scaling Cooldowns",
+            "Default: 300 seconds",
+            "Can be set for each scaling policy"
+          ]
+        ]
+      }
+    ]
+  },
+  {
     "chapter": "Review",
     "section": [
       {
