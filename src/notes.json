@@ -197,10 +197,29 @@
         ]
       },
       {
-        "header": "Sticky Sessions",
+        "header": "Cross Zone Load Balancing",
         "notes": [
           [
-            "Redirects user to the same instance behind a load balancer"
+            "if 2 load balancers in multi-AZ, distributes traffic evenly across instances, instead of across ELBs",
+            "ALB: default, no charge",
+            "NLB and GWLB: must be enabled, charge"
+          ]
+        ]
+      },
+      {
+        "header": "SSL/TLS",
+        "notes": [
+          [
+            "Use ACM to manage certificates",
+            "SNI: multiple SSL certificates on one web server to serve multiple websites"
+          ]
+        ]
+      },
+      {
+        "header": "Connection Draining",
+        "notes": [
+          [
+            "Before terminating instance, stop sending new requests but finish existing requests"
           ]
         ]
       }
