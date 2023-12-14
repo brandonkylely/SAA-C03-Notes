@@ -109,7 +109,7 @@
     ]
   },
   {
-    "chapter": "EC2 Instance Storage",
+    "chapter": "EC2 Storage",
     "section": [
       {
         "header": "EBS Volumes",
@@ -156,6 +156,17 @@
           [
             "EBS Encryption: Encrypts data at rest and in transit, snapshots, and volumes from snapshots. Always do.",
             "Encrypt an unencrypted volume: Create snapshot -> Copy snapshot and encrypt the copy -> Create volume from encrypted copy -> Attach volume to original EC2 instance"
+          ]
+        ]
+      },
+      {
+        "header": "EFS",
+        "notes": [
+          [
+            "Elastic File System: Managed NFS (Network File System)",
+            "Multi-AZ, expensive, pay per use",
+            "EFS-IA: Lifecycle policy",
+            "One-Zone EFS: Single AZ, cheaper, less available"
           ]
         ]
       }
